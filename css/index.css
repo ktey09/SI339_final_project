@@ -1,0 +1,49 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('../images/polygon-scatter-haikei.svg'); 
+    background-size: auto; /* Ensures the image covers the entire background */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    background-position: center; /* Centers the image */
+    color: #333;
+    padding: 7px;
+}
+
+h1 {
+    background: #001829; 
+    font-size: 2.5rem;
+    color: #444;
+    margin-bottom: 7px;
+    font-family: 'Rye', cursive;
+    color: white;
+}
+
+p {
+    background: #001829; /* to avoid the lines */
+    margin: 15px;
+}
+
+/* Introduction text */
+.card { 
+    border-radius: 12px;
+    text-align: center;
+    width: 50%; /* thought it looks better */
+    height: auto;
+    padding: 3%;
+    margin: 0 auto; /* Centers the card horizontally */
+    perspective: 1000px; /* Enables 3D effect */
+    position: relative; 
+    color: #f5f5f5;
+}
+
+.intro {
+    margin: 5%;
+}

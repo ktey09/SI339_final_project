@@ -1,0 +1,41 @@
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Adds spacing between buttons */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: inline-block;
+    background-color: #297EA6; /* Button background color */
+    color: white; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    padding: 12px 25px; /* Slightly larger padding for better usability */
+    border-radius: 12px; /* Smoother rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), inset 0 -2px 4px rgba(255, 255, 255, 0.2); /* Outer and inner shadows */
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease; /* Smooth effects */
+}
+
+nav ul li a:hover {
+    background-color: #7c2ce4; /* Slightly lighter purple on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4), inset 0 -2px 4px rgba(255, 255, 255, 0.3); /* Stronger shadows for hover */
+}
+
+nav ul li a:active {
+    transform: translateY(2px); /* Pressed effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), inset 0 -2px 4px rgba(255, 255, 255, 0.1); /* Subtle shadows for active state */
+}
