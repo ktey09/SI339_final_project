@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -46,7 +45,6 @@ h1 {
     color: white;
 }
 
-/* Card Grid */
 .card-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
@@ -54,7 +52,6 @@ h1 {
     padding: 20px;
 }
 
-/* Card */
 .card {
     background: linear-gradient(145deg, #2c334f, #3a456a); 
     border-radius: 12px; 
@@ -69,13 +66,11 @@ h1 {
     transition: transform 0.6s; /* Smooth flipping animation */
 }
 
-/* Card Hover Effect */
 .card:hover {
     transform: translateY(-10px); /* Lifts the card slightly */
     box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5), -6px -6px 10px rgba(255, 255, 255, 0.15); /* shadow effect on hover */
 }
 
-/* Image Styling */
 .card img {
     width: 80%; 
     height: 250px; 
@@ -126,5 +121,18 @@ h1 {
     transform: rotateY(-180deg);
   }
 
+@media (prefers-reduced-motion: reduce) {
+    .card {
+        transition: none;
+        animation: none;
+    }
 
+    .card:hover{
+        transform: translateY(0px);
+    }
+
+    .card.flipped:hover{
+        transform: rotateY(-180deg);
+    }
+}
 

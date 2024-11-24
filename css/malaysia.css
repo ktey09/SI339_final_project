@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Body */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -96,4 +95,14 @@ section p {
 .gallery img:hover {
     transform: scale(1.1); /* Scales image slightly on hover */
     cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gallery img {
+        transition: none;
+    }
+
+    .gallery img:hover{
+        transform: none;
+    }
 }
